@@ -1,0 +1,450 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("https://i.pinimg.com/736x/fc/4b/51/fc4b518aa13c8e3075485d2a8fca7050.jpg");
+}
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.homeBookBox {
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+
+  background-color: blueviolet;
+}
+
+.homeBook {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  height: 450px;
+}
+.genreBookList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid black;
+}
+.Book {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  height: 490px;
+}
+.genreBook {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 490px;
+  margin: 10px;
+  padding: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px;
+  font-family: "Oswald", serif;
+}
+.navLinks {
+  list-style: none;
+  text-decoration: none;
+}
+.categories {
+  background-color: blueviolet;
+  color: white;
+  list-style: none;
+  text-decoration: none;
+}
+.categories a {
+  text-decoration: none;
+  color: white;
+}
+.categories .slick-list {
+  height: auto;
+  padding: 10px;
+}
+.slick-slider {
+  margin: 33px;
+  width: 90vw;
+}
+.slick-slide > div {
+  margin: 0 10px;
+}
+.slick-list {
+  height: 500px;
+}
+/* General container styling */
+.add-book-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+}
+
+/* Heading styles */
+.add-book-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+/* Input focus effect */
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Textarea specific styling */
+.form-group textarea {
+  resize: none;
+  height: 80px;
+}
+
+/* Button styling */
+.add-book-button {
+  display: inline-block;
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: blueviolet;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;
+  text-decoration: none;
+}
+
+.add-book-button:hover {
+  background-color: #0056b3;
+}
+
+/* Add hover effects for links */
+.add-book-button:focus {
+  background-color: #004080;
+  outline: none;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .add-book-container {
+    padding: 15px;
+  }
+
+  .add-book-container h2 {
+    font-size: 20px;
+  }
+
+  .add-book-button {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+/* General Header Styling */
+.header {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blueviolet;
+  margin: 0;
+  padding: 15px 20px;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Links Styling */
+.navLinks {
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+/* Hover and Focus Effects */
+.navLinks:hover,
+.navLinks:focus {
+  text-shadow: 0 0 10px #b5ccf0;
+  outline: none;
+}
+
+/* List Item Styling */
+.header li {
+  list-style: none;
+  cursor: pointer;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 10px 15px;
+  }
+
+  .navLinks {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+}
+/* General Body Styling */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Search Bar Styling */
+input[type="text"] {
+  width: 80%;
+  margin: 20px auto;
+  display: block;
+  padding: 10px;
+  border: 2px solid blueviolet;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  background-color: #f9f9ff;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #800080;
+  outline: none;
+}
+
+/* All Books Section */
+.allBooks {
+  text-align: center;
+}
+.allBooks .slick-list {
+  height: auto;
+}
+.allBooks h2 {
+  color: blueviolet;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+/* Categories/Genres Slider */
+.categories {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Book Card Styling */
+.Book,
+.genreBook {
+  margin: 15px;
+  padding: 20px;
+  border: 2px solid #e0e0ff;
+  border-radius: 10px;
+  background-color: #f9f9ff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.Book img,
+.genreBook img {
+  border-radius: 5px;
+}
+
+.Book h1,
+.genreBook h1 {
+  font-size: 22px;
+  color: blueviolet;
+  margin: 10px 0;
+}
+
+.Book h3,
+.genreBook h3 {
+  font-size: 18px;
+  color: #555;
+}
+
+.Book p,
+.genreBook p {
+  font-size: 14px;
+  color: #666;
+}
+
+.Book button,
+.genreBook button {
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #fff;
+  background-color: blueviolet;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.Book button:hover,
+.genreBook button:hover {
+  background-color: #800080;
+}
+
+/* Genre List */
+.genreList {
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.genre {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 2px solid blueviolet;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.genre h1 {
+  font-size: 24px;
+  color: blueviolet;
+  margin-bottom: 15px;
+}
+
+.genreBookList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.heading {
+  text-align: center;
+  margin: 20px 0;
+  font-family: "Oswald", serif;
+  color: rgb(94, 8, 105);
+}
+
+.heading h1,
+.heading h2 {
+  margin: 10px 0;
+}
+
+/* Section titles */
+.topRated h1,
+.latestArrivals h1 {
+  font-family: "Dancing Script", serif;
+  text-align: center;
+  margin-bottom: 20px;
+  color: blueviolet;
+}
+
+/* Book container */
+.homeBookBox {
+  padding: 20px;
+  background-color: blueviolet;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+/* Individual book */
+.homeBook {
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.homeBook:hover {
+  transform: scale(1.05);
+}
+
+/* Book image */
+.homeBook img {
+  border-radius: 10px;
+}
+
+/* Book title and description */
+.homeBook h1 {
+  font-size: 1.2rem;
+  color: blueviolet;
+  margin-top: 10px;
+}
+
+.homeBook p {
+  font-size: 1rem;
+  color: #4a4a4a;
+}
+
+/* Slider dots */
+.slick-dots li button:before {
+  color: white;
+}
+
+.slick-dots li.slick-active button:before {
+  color: blueviolet;
+}
+
+/* Slider navigation buttons */
+.slick-prev,
+.slick-next {
+  z-index: 1;
+  color: white;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  color: blueviolet;
+}
